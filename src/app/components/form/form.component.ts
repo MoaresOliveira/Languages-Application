@@ -8,7 +8,7 @@ import { Language } from '../../models/language';
 })
 export class FormComponent implements OnInit {
 
-  option: string = 'Create';
+  option: string = 'Add';
   name!: string;
   logo!: string;
 
