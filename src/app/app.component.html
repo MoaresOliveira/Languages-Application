@@ -1,11 +1,11 @@
 <app-navbar></app-navbar>
-<div class="container d-flex gap-1 my-2">
-  <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center border rounded">
-    <div class="col-sm-10">
+<div class="container d-flex gap-1 my-4">
+  <div class="col-6 d-flex flex-column justify-content-center align-items-center border rounded">
+    <div class="col-10">
       <app-form (onAction)="action($event)"></app-form>
     </div>
   </div>
-  <div class="col-sm-6 list border rounded">
+  <div class="col-6 list border rounded">
     <app-card *ngFor="let language of languages" [language]="language" (onVote)="vote($event)"></app-card>
   </div>
 </div>
