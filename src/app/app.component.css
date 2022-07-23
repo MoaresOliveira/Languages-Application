@@ -1,0 +1,24 @@
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  width: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.404);
+  border-radius: 15px;
+  background-color: #fbfbfb;
+}

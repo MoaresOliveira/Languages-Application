@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://languages-api-java.herokuapp.com/api/languages",
+    "secure": true,
+    "pathRewrite": {
+    "^/api": ""
+  },
+    "changeOrigin": true
+  }
+}

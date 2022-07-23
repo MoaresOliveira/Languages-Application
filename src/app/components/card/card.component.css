@@ -1,0 +1,18 @@
+.ranking{
+  background-color: #00000060;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: #ffffff90;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+.card{
+  position: relative;
+}
+
+.like{
+  height: 15px;
+  cursor: pointer;
+}
