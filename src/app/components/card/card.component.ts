@@ -11,12 +11,17 @@ export class CardComponent implements OnInit, AfterViewInit {
 
   @Input() language!: Language;
   @Output() onVote: EventEmitter<Language> = new EventEmitter();
+  @Output() onDelete: EventEmitter<Language> = new EventEmitter();
   voted!: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
 
+  }
+
+  remove(){
+    this.onDelete.emit(this.language)
   }
 
   ngAfterViewInit(): void {

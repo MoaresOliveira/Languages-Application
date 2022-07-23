@@ -40,9 +40,22 @@ export class AppComponent implements OnInit {
   }
 
   action(language: Language){
+    language.name = language.name.trim();
+    language.logo = language.logo.trim();
     this.languageService.addLanguage(language).subscribe((response)=> {
       this.listLanguages()
     })
+  }
+
+  remove(language: Language){
+    let senha = prompt("Insira a senha pra deletar " + language.name)
+    if(senha === "deletar/"+language.name){
+      this.languageService.deleteLanguageByName(language.name).subscribe((response)=> {
+        this.listLanguages()
+      })
+    }else {
+      alert("Senha incorreta")
+    }
   }
 
 }

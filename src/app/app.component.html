@@ -6,6 +6,6 @@
     </div>
   </div>
   <div class="col-6 list border rounded">
-    <app-card *ngFor="let language of languages" [language]="language" (onVote)="vote($event)"></app-card>
+    <app-card *ngFor="let language of languages" [language]="language" (onVote)="vote($event)" (onDelete)="remove($event)"></app-card>
   </div>
 </div>

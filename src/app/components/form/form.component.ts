@@ -9,8 +9,8 @@ import { Language } from '../../models/language';
 export class FormComponent implements OnInit {
 
   option: string = 'Add';
-  name!: string;
-  logo!: string;
+  name: string = '';
+  logo: string = '';
 
   @Output() onAction: EventEmitter<Language> = new EventEmitter();
 
@@ -25,6 +25,8 @@ export class FormComponent implements OnInit {
         name: this.name,
         logo: this.logo
       }
+      this.name = ''
+      this.logo = ''
       this.onAction.emit(language)
     }
 

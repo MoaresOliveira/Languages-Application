@@ -4,6 +4,8 @@
   border-radius: 5px;
   color: #ffffff90;
   position: absolute;
+  cursor: default;
+  user-select: none;
   top: 5px;
   right: 5px;
   font-size: 10px;
